@@ -4,13 +4,14 @@ public class Company {
 
     private String name;
 
-    private HardWorker hardWorker = new HardWorker();
+    private Worker worker;
 
-    public Company(String name) {
+    public Company(String name, Worker worker) {
         this.name = name;
+        this.worker = worker;
     }
 
     public void startWork(){
-        hardWorker.work();
+        worker.work();
     }
 }
