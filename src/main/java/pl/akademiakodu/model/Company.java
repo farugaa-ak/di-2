@@ -1,5 +1,8 @@
 package pl.akademiakodu.model;
 
+import pl.akademiakodu.model.workers.SmartWorker;
+import pl.akademiakodu.model.workers.Worker;
+
 public class Company {
 
     private String name;
