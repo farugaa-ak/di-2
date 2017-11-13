@@ -1,22 +1,23 @@
 package pl.akademiakodu;
 
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 import pl.akademiakodu.model.Company;
 import pl.akademiakodu.model.workers.HardWorker;
 import pl.akademiakodu.model.workers.SmartWorker;
 import pl.akademiakodu.model.workers.Worker;
 
-import java.util.ArrayList;
-import java.util.List;
+@SpringBootApplication
+public class App {
 
-/**
- * Hello world!
- *
- */
-public class App 
-{
+    public static void main(String[] args) {
+        SpringApplication.run(App.class, args);
 
-    public static void main(String[] args )
-    {
+        appMain();
+    }
+
+    public static void appMain() {
+        System.out.println("===============");
         //dependency injection
         //container
         Worker smartWorker = new SmartWorker();
@@ -25,6 +26,7 @@ public class App
         Company company = new Company("Some company", worker);
         company.startWork();
 
+        System.out.println("===============");
 
 
     }
