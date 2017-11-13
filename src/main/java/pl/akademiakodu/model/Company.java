@@ -4,13 +4,13 @@ public class Company {
 
     private String name;
 
-    private LazyWorker lazyWorker = new LazyWorker();
+    private HardWorker hardWorker = new HardWorker();
 
     public Company(String name) {
         this.name = name;
     }
 
     public void startWork(){
-        lazyWorker.work();
+        hardWorker.work();
     }
 }
