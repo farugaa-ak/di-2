@@ -1,8 +1,10 @@
 package pl.akademiakodu.model.workers;
 
-public class LazyWorker implements Worker{
+import org.springframework.stereotype.Component;
 
-    public void work(){
+public class LazyWorker implements Worker {
+
+    public void work() {
         System.out.println("LazyWorker is working...");
     }
 }
